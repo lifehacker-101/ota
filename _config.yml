@@ -10,6 +10,7 @@ sass:
 exclude:
   - Gemfile*
   - vendor
+  - gen_mirror_json.py
   - LICENSE*
 
 defaults:
