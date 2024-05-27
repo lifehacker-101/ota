@@ -11,6 +11,7 @@ exclude:
   - Gemfile*
   - vendor
   - gen_mirror_json.py
+  - gen_pages.py
   - LICENSE*
 
 defaults:
