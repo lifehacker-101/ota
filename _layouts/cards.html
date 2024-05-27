@@ -30,7 +30,7 @@ layout: compress
 								<div class="mb-3">
 									<span class="i18n innerHTML-sort">Sort:</span>
 									<button id="sort-title" class="btn btn-outline-secondary i18n innerHTML-title" onclick="sort('title')">Title</button>
-									<button id="sort-creator" class="btn btn-outline-secondary i18n innerHTML-creator" onclick="sort('creator')">Creator</button>
+									<button id="sort-manufacturer" class="btn btn-outline-secondary i18n innerHTML-manufacturer" onclick="sort('manufacturer')">Manufacturer</button>
 									<button id="sort-description" class="btn btn-outline-secondary i18n innerHTML-description" onclick="sort('description')">Description</button>
 									<button id="sort-direction" class="btn btn-outline-secondary float-end i18n innerHTML-ascending data-ascending-ascending data-descending-descending" onclick="toggleSortDirection()" data-ascending="Ascending" data-descending="Descending">Ascending</button>
 								</div>
@@ -46,7 +46,7 @@ layout: compress
 						{% elsif page.title == "Home" %}
 							{% assign temp = site.device %}
 							{% for item in temp %}
-								{% assign id = item.creator | append: item.title %}
+								{% assign id = item.manufacturer | append: item.title %}
 								{% unless existing contains id %}
 									{% assign id = id | split: "////////" %}
 									{% assign existing = existing | concat: id %}
@@ -62,7 +62,7 @@ layout: compress
 							{% for app in cards limit: page.limit %}
 								{% if page.category == Nil or app.categories contains page.category %}
 									<div class="col mb-3 {% if page.limit == 4 and forloop.index == 4 %}d-md-none d-xl-block{% endif %}">
-										<div class="card h-100" data-title="{{ app.title | escape}}" data-creator="{{ app.creator | escape}}" data-description="{{ app.description | escape }}">
+										<div class="card h-100" data-title="{{ app.title | escape}}" data-manufacturer="{{ app.manufacturer | escape}}" data-description="{{ app.description | escape }}">
 											<a class="flex-grow-1" href="{{ app.url | remove: ".html" }}">
 												{% if app.images.size > 0 %}
 													<div class="card-header card-image-header">
@@ -71,9 +71,9 @@ layout: compress
 												{% endif %}
 												<div class="card-body" dir="ltr">
 													<div>
-														<h4 class="card-title text-center {% if app.creator %}mb-0{% endif %}">{{ app.title | escape }}</h4>
-														{% if app.creator %}
-															<small class="d-block text-center mb-3">{{ app.creator }}</small>
+														<h4 class="card-title text-center {% if app.manufacturer %}mb-0{% endif %}">{{ app.title | escape }}</h4>
+														{% if app.manufacturer %}
+															<small class="d-block text-center mb-3">{{ app.manufacturer }}</small>
 														{% endif %}
 														<p class="card-text">{{ app.description | escape }}</p>
 													</div>

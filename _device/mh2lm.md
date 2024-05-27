@@ -1,6 +1,6 @@
 ---
 title: G8X ThinQ / V50S ThinQ
-creator: LG
+manufacturer: LG
 description:
 categories:
 - lge
