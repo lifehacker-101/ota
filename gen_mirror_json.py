@@ -17,11 +17,12 @@ import zipfile
 from datetime import datetime
 from time import mktime
 
-if len(sys.argv) < 2:
-    print("usage python {} /path/to/mirror/base/url".format(sys.argv[0]))
+if len(sys.argv) < 3:
+    print(f"usage python3 {sys.argv[0]} /path/to/mirror/base/url [URL of mirror]")
     sys.exit()
 
 FILE_BASE = sys.argv[1]
+URL_BASE = sys.argv[2] if len(sys.argv) >= 3 else ''
 builds = {}
 
 for f in [os.path.join(dp, f) for dp, dn, fn in os.walk(FILE_BASE) for f in fn]:
@@ -48,7 +49,7 @@ for f in [os.path.join(dp, f) for dp, dn, fn in os.walk(FILE_BASE) for f in fn]:
         'date': '{}-{}-{}'.format(builddate[0:4], builddate[4:6], builddate[6:8]),
         'datetime': timestamp,
         'filename': filename,
-        'filepath': f.replace(FILE_BASE, ''),
+        'filepath': f.replace(FILE_BASE, URL_BASE),
         'version': version,
         'type': buildtype.lower()
     })
