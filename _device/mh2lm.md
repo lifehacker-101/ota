@@ -8,6 +8,6 @@ images:
 kernel:
 - url: https://github.com/lge-qcom-dev/android_kernel_lge_sm8150
 downloads:
-  lineage-20.0-20240228-UNOFFICIAL-mh2lm.zip:
-    url: https://sourceforge.net/projects/lifehackerhansol/android/files/lineage/mh2lm/lineage-20.0-20240228-UNOFFICIAL-mh2lm.zip
+  lineage-21.0-20240528-UNOFFICIAL-mh2lm-signed.zip:
+    url: https://sourceforge.net/projects/lifehackerhansol-android/files/lineage/release//mh2lm/lineage-21.0-20240528-UNOFFICIAL-mh2lm-signed.zip
 ---

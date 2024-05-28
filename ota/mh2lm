@@ -1,14 +1,13 @@
 {
     "response": [
         {
-            "date": "2024-02-28",
-            "datetime": "1709118243",
-            "filename": "lineage-20.0-20240228-UNOFFICIAL-mh2lm.zip",
-            "filepath": "https://sourceforge.net/projects/lifehackerhansol/android/files/lineage/mh2lm/lineage-20.0-20240228-UNOFFICIAL-mh2lm.zip",
-            "sha256": "fc6a81e71155927fdfb1fffceafac029729d85a5b0470ffe2b3671e3f05a2dae",
-            "size": 1089765359,
-            "type": "unofficial",
-            "version": "20.0"
+            "datetime": "1716875829",
+            "filename": "lineage-21.0-20240528-UNOFFICIAL-mh2lm-signed.zip",
+            "id": "c2d3c16d5df5b571d770b15f13d62ddd70146392d701bbbacc058c6fa107297c",
+            "romtype": "unofficial",
+            "size": 1177844457,
+            "url": "https://sourceforge.net/projects/lifehackerhansol-android/files/lineage/release//mh2lm/lineage-21.0-20240528-UNOFFICIAL-mh2lm-signed.zip",
+            "version": "21.0"
         }
     ]
 }
