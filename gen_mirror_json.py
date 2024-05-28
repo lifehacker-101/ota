@@ -40,16 +40,15 @@ def gen_json(FILE_BASE: str, URL_BASE: str):
                 timestamp = int(mktime(datetime.strptime(builddate, '%Y%m%d').timetuple()))
 
         builds.setdefault("response", []).append({
-            'sha256': sha256.hexdigest(),
+            'id': sha256.hexdigest(),
             'size': os.path.getsize(f),
-            'date': '{}-{}-{}'.format(builddate[0:4], builddate[4:6], builddate[6:8]),
             'datetime': timestamp,
             'filename': filename,
-            'filepath': f.replace(FILE_BASE, URL_BASE),
+            'url': f.replace(FILE_BASE, URL_BASE),
             'version': version,
-            'type': buildtype.lower()
+            'romtype': buildtype.lower()
         })
-    builds["response"] = sorted(builds["response"], key=lambda x: x['date'])
+    builds["response"] = sorted(builds["response"], key=lambda x: x['datetime'])
     return builds
 
 

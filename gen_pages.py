@@ -15,11 +15,10 @@ def gen_page(device: str):
     # Initialize downloads section
     deviceData['downloads'] = {}
 
-    for buildDevice in buildData:
-        for build in buildData[buildDevice]:
-            # Initialize download item
-            deviceData['downloads'][build['filename']] = {}
-            deviceData['downloads'][build['filename']]['url'] = build['filepath']
+    for build in buildData["response"]:
+        # Initialize download item
+        deviceData['downloads'][build['filename']] = {}
+        deviceData['downloads'][build['filename']]['url'] = build['url']
 
     # Reverse sort this so that the latest link is the first one
     deviceData['downloads'] = dict(sorted(deviceData['downloads'].items(), reverse=True))
