@@ -7,6 +7,7 @@
 #
 
 from __future__ import print_function
+import errno
 import hashlib
 import json
 import os
@@ -17,42 +18,50 @@ import zipfile
 from datetime import datetime
 from time import mktime
 
-if len(sys.argv) < 3:
-    print(f"usage python3 {sys.argv[0]} /path/to/mirror/base/url [URL of mirror]")
-    sys.exit()
+def gen_json(FILE_BASE: str, URL_BASE: str):
+    builds = {}
 
-FILE_BASE = sys.argv[1]
-URL_BASE = sys.argv[2] if len(sys.argv) >= 3 else ''
-builds = {}
+    for f in [os.path.join(dp, f) for dp, dn, fn in os.walk(FILE_BASE) for f in fn]:
+        data = open(f, 'rb')
+        filename = f.split('/')[-1]
+        # lineage-14.1-20171129-nightly-hiaeul-signed.zip
+        _, version, builddate, buildtype, device = os.path.splitext(filename)[0].split('-')
+        print('hashing sha256 for {}'.format(filename), file=sys.stderr)
+        sha256 = hashlib.sha256()
+        for buf in iter(lambda: data.read(128 * 1024), b''):
+            sha256.update(buf)
 
-for f in [os.path.join(dp, f) for dp, dn, fn in os.walk(FILE_BASE) for f in fn]:
-    data = open(f, 'rb')
-    filename = f.split('/')[-1]
-    # lineage-14.1-20171129-nightly-hiaeul-signed.zip
-    _, version, builddate, buildtype, device = os.path.splitext(filename)[0].split('-')
-    print('hashing sha256 for {}'.format(filename), file=sys.stderr)
-    sha256 = hashlib.sha256()
-    for buf in iter(lambda: data.read(128 * 1024), b''):
-        sha256.update(buf)
+            try:
+                with zipfile.ZipFile(f'{FILE_BASE}/{filename}', 'r') as update_zip:
+                    build_prop = update_zip.read('META-INF/com/android/metadata').decode('utf-8')
+                    timestamp = (re.findall('post-timestamp=([0-9]+)', build_prop)[0])
+            except Exception as e:
+                print(e)
+                timestamp = int(mktime(datetime.strptime(builddate, '%Y%m%d').timetuple()))
 
-        try:
-            with zipfile.ZipFile(f'{FILE_BASE}/{filename}', 'r') as update_zip:
-                build_prop = update_zip.read('META-INF/com/android/metadata').decode('utf-8')
-                timestamp = (re.findall('post-timestamp=([0-9]+)', build_prop)[0])
-        except Exception as e:
-            print(e)
-            timestamp = int(mktime(datetime.strptime(builddate, '%Y%m%d').timetuple()))
+        builds.setdefault("response", []).append({
+            'sha256': sha256.hexdigest(),
+            'size': os.path.getsize(f),
+            'date': '{}-{}-{}'.format(builddate[0:4], builddate[4:6], builddate[6:8]),
+            'datetime': timestamp,
+            'filename': filename,
+            'filepath': f.replace(FILE_BASE, URL_BASE),
+            'version': version,
+            'type': buildtype.lower()
+        })
+    builds["response"] = sorted(builds["response"], key=lambda x: x['date'])
+    return builds
 
-    builds.setdefault(device, []).append({
-        'sha256': sha256.hexdigest(),
-        'size': os.path.getsize(f),
-        'date': '{}-{}-{}'.format(builddate[0:4], builddate[4:6], builddate[6:8]),
-        'datetime': timestamp,
-        'filename': filename,
-        'filepath': f.replace(FILE_BASE, URL_BASE),
-        'version': version,
-        'type': buildtype.lower()
-    })
-for device in builds.keys():
-    builds[device] = sorted(builds[device], key=lambda x: x['date'])
-print(json.dumps(builds, sort_keys=True, indent=4))
+
+if __name__ == "__main__":
+    if len(sys.argv) < 3:
+        print(f"usage python3 {sys.argv[0]} /path/to/mirror/base/url [URL of mirror]")
+        sys.exit(errno.EINVAL)
+
+    FILE_BASE = sys.argv[1]
+    URL_BASE = sys.argv[2] if len(sys.argv) >= 3 else ''
+
+    for device in os.listdir(FILE_BASE):
+        otaData = gen_json(f"{FILE_BASE}/{device}", f"{URL_BASE}/{device}" if URL_BASE else '')
+        with open(f"ota/{device}", 'w') as otafile:
+            json.dump(otaData, otafile, sort_keys=True, indent=4)
