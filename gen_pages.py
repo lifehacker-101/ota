@@ -38,6 +38,13 @@ def gen_page(device: str):
         devicePage.write('---\n')
         yaml.dump(deviceData, devicePage, sort_keys=False)
         devicePage.write('---')
+        devicePage.write('\n\n')
+        try:
+            with open(f'_instructions/{device}.md', 'r') as deviceInstructions:
+                devicePage.write('## Installation Instrutions\n\n')
+                devicePage.write(deviceInstructions.read())
+        except FileNotFoundError:
+            pass
 
 
 if __name__ == "__main__":

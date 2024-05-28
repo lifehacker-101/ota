@@ -17,3 +17,4 @@ downloads:
   lineage-18.1-20230310-UNOFFICIAL-gta2swifi.zip:
     url: https://sourceforge.net/projects/lifehackerhansol-android/files/lineage/release//gta2swifi/lineage-18.1-20230310-UNOFFICIAL-gta2swifi.zip
 ---
+
