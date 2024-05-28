@@ -6,22 +6,31 @@ import yaml
 
 
 def gen_page(device: str):
+    deviceData = {}
     with open(f"_data/devices/{device}.yml", 'r') as deviceYaml:
         deviceData = yaml.safe_load(deviceYaml)
 
-    with open(f"ota/{device}", 'r') as buildJson:
-        buildData = json.load(buildJson)
+    buildData = {}
+    try:
+        with open(f"ota/{device}", 'r') as buildJson:
+            buildData = json.load(buildJson)
+    except FileNotFoundError:
+        pass
 
     # Initialize downloads section
     deviceData['downloads'] = {}
 
-    for build in buildData["response"]:
-        # Initialize download item
-        deviceData['downloads'][build['filename']] = {}
-        deviceData['downloads'][build['filename']]['url'] = build['url']
+    if buildData:
+        for build in buildData["response"]:
+            # Initialize download item
+            deviceData['downloads'][build['filename']] = {}
+            deviceData['downloads'][build['filename']]['url'] = build['url']
 
-    # Reverse sort this so that the latest link is the first one
-    deviceData['downloads'] = dict(sorted(deviceData['downloads'].items(), reverse=True))
+    if deviceData['downloads']:
+        # Reverse sort this so that the latest link is the first one
+        deviceData['downloads'] = dict(sorted(deviceData['downloads'].items(), reverse=True))
+    else:
+        deviceData.pop('downloads')
 
     # Rewrite page front matter
     # That's the only thing on this file anyway
