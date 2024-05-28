@@ -125,6 +125,9 @@ dl, dd:not(:last-of-type) {
 .text-primary {
 	background-color: $primary!important;
 }
+.navbar-brand {
+	color: $nav-link-color!important;
+}
 
 // Override the secondary text color
 .btn-outline-secondary {

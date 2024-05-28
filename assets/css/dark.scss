@@ -22,9 +22,9 @@ $card-edges-background: rgba(0, 0, 0, 0.15);
 $modal-borders: 1px solid rgba(0, 0, 0, 0.2);
 
 // Nav
-$nav-link-color: rgba(255, 255, 255, 0.7);
-$nav-link-color-hover: rgba(255, 255, 255, 0.5);
-$nav-link-color-active: rgba(255, 255, 255, 1);
+$nav-link-color: rgba(0, 0, 0, 0.7);
+$nav-link-color-hover: rgba(0, 0, 0, 0.5);
+$nav-link-color-active: rgba(0, 0, 0, 1);
 $dropdown-item-bg-hover: rgba(0, 0, 0, 0.3);
 $primary: {{ page.color | default: site.color }};
 $dark: #f8f9fa;
