@@ -1,0 +1,8 @@
+title: Galaxy Tab A 8.0 (2019)
+manufacturer: Samsung
+categories:
+- samsung
+images:
+- url: /assets/images/devices/gtowifi.png
+kernel:
+- url: https://github.com/lifehackerhansol-android/android_kernel_samsung_sdm429
