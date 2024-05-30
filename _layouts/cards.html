@@ -66,9 +66,7 @@ layout: compress
 												<div class="card-body" dir="ltr">
 													<div>
 														<h4 class="card-title text-center {% if app.manufacturer %}mb-0{% endif %}">{{ app.title | escape }}</h4>
-														{% if app.manufacturer %}
-															<small class="d-block text-center mb-3">{{ app.manufacturer }}</small>
-														{% endif %}
+														<small class="d-block text-center mb-3">{{ app.manufacturer }}</small>
 														<p class="card-text">{{ app.description | escape }}</p>
 													</div>
 												</div>
