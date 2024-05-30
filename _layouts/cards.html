@@ -18,12 +18,6 @@ layout: compress
 					<div class="col-12 main-content mx-auto">
 						{{ content }}
 
-						{% if page.description %}
-							<div class="alert alert-secondary mb-4 innerHTML-catdesc-{{ page.category }}">
-								{{ page.description | escape }}
-							</div>
-						{% endif %}
-						
 						{% if page.system %}
 							<div class="d-none">
 								{% include script-show.html %}
