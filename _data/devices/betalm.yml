@@ -5,5 +5,4 @@ categories:
 - lge
 images:
 - url: /assets/images/devices/betalm.png
-kernel:
-- url: https://github.com/lge-qcom-dev/android_kernel_lge_sm8150
+kernel: https://github.com/lge-qcom-dev/android_kernel_lge_sm8150
