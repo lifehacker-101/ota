@@ -74,7 +74,7 @@ layout: compress
 											{% if page.downloads %}
 											{% for item in page.downloads %}
 												<span class="text-nowrap">
-													<a class="btn btn-primary m-1 innerHTML-download-name" {% if item[1].size_str %}title="Size: {{ item[1].size_str }}"{% endif %} href="{{ item[1].url }}" data-name="{{ item[0] }}">Download {{ item[0] }}</a>
+													<a class="btn btn-primary m-1 innerHTML-download-name" {% if item[1].size_str %}title="Size: {{ item[1].size_str }}"{% endif %} href="{{ item[1].url }}" data-name="{{ item[0] }}">{{ item[0] }}</a>
 												</span>
 											{% endfor %}
 											{% else %}
