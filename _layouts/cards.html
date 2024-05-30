@@ -19,7 +19,7 @@ layout: compress
 						{{ content }}
 
 						{% if page.description %}
-							<div class="alert alert-secondary mb-4 i18n innerHTML-catdesc-{{ page.category }}">
+							<div class="alert alert-secondary mb-4 innerHTML-catdesc-{{ page.category }}">
 								{{ page.description | escape }}
 							</div>
 						{% endif %}
@@ -28,15 +28,15 @@ layout: compress
 							<div class="d-none">
 								{% include script-show.html %}
 								<div class="mb-3">
-									<span class="i18n innerHTML-sort">Sort:</span>
-									<button id="sort-title" class="btn btn-outline-secondary i18n innerHTML-title" onclick="sort('title')">Title</button>
-									<button id="sort-manufacturer" class="btn btn-outline-secondary i18n innerHTML-manufacturer" onclick="sort('manufacturer')">Manufacturer</button>
-									<button id="sort-description" class="btn btn-outline-secondary i18n innerHTML-description" onclick="sort('description')">Description</button>
-									<button id="sort-direction" class="btn btn-outline-secondary float-end i18n innerHTML-ascending data-ascending-ascending data-descending-descending" onclick="toggleSortDirection()" data-ascending="Ascending" data-descending="Descending">Ascending</button>
+									<span class="innerHTML-sort">Sort:</span>
+									<button id="sort-title" class="btn btn-outline-secondary innerHTML-title" onclick="sort('title')">Title</button>
+									<button id="sort-manufacturer" class="btn btn-outline-secondary innerHTML-manufacturer" onclick="sort('manufacturer')">Manufacturer</button>
+									<button id="sort-description" class="btn btn-outline-secondary innerHTML-description" onclick="sort('description')">Description</button>
+									<button id="sort-direction" class="btn btn-outline-secondary float-end innerHTML-ascending data-ascending-ascending data-descending-descending" onclick="toggleSortDirection()" data-ascending="Ascending" data-descending="Descending">Ascending</button>
 								</div>
 								<div class="input-group mb-3">
-									<label for="search" class="input-group-text i18n innerHTML-search">Search:</label>
-									<input id="search" class="form-control i18n placeholder-search-by-title-desc" type="text" placeholder="Search by title or description" onkeyup="search(event.srcElement.value);" accesskey="/">
+									<label for="search" class="input-group-text innerHTML-search">Search:</label>
+									<input id="search" class="form-control placeholder-search-by-title-desc" type="text" placeholder="Search by title or description" onkeyup="search(event.srcElement.value);" accesskey="/">
 								</div>
 							</div>
 						{% endif %}
