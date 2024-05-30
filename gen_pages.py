@@ -5,6 +5,21 @@ import os
 import yaml
 
 
+def byteCount(bytes: int) -> str:
+	"""Converts an int number of bytes to a str with the largest appropriate unit"""
+
+	if bytes == 1:
+		return "1 Byte"
+	elif bytes < (1 << 10):
+		return f"{bytes} Bytes"
+	elif bytes < (1 << 20):
+		return f"{bytes // (1 << 10)} KiB"
+	elif bytes < (1 << 30):
+		return f"{bytes // (1 << 20)} MiB"
+	else:
+		return f"{bytes // (1 << 30)} GiB"
+
+
 def gen_page(device: str):
     deviceData = {}
     with open(f"_data/devices/{device}.yml", 'r') as deviceYaml:
@@ -25,6 +40,8 @@ def gen_page(device: str):
             # Initialize download item
             deviceData['downloads'][build['filename']] = {}
             deviceData['downloads'][build['filename']]['url'] = build['url']
+            deviceData['downloads'][build['filename']]['size'] = build['size']
+            deviceData['downloads'][build['filename']]['size_str'] = byteCount(build['size'])
 
     if deviceData['downloads']:
         # Reverse sort this so that the latest link is the first one
