@@ -51,13 +51,19 @@ layout: compress
 													</dd>
 												</div>
 												{% endif %}
+												{% if page.kernel %}
+												<div>
+													<dt class="innerHTML-kernelversion">Kernel version:</dt>
+													<p>{{ page.kernel.version }}</p>
+												</div>
+												{% endif %}
 											</dl>
 										</small>
 									</div>
 								</div>
 								<div class="text-center pt-3">
 									{% if page.kernel %}
-										<a class="btn btn-primary m-1 innerHTML-kernel" href="{{ page.kernel }}">Kernel source</a>
+										<a class="btn btn-primary m-1 innerHTML-kernel" href="{{ page.kernel.url }}">Kernel source</a>
 									{% endif %}
 								</div>
 							</div>

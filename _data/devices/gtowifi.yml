@@ -5,4 +5,6 @@ categories:
 - samsung
 images:
 - url: /assets/images/devices/gtowifi.png
-kernel: https://github.com/LineageOS/android_kernel_samsung_sdm429
+kernel:
+  url: https://github.com/LineageOS/android_kernel_samsung_sdm429
+  version: 4.9

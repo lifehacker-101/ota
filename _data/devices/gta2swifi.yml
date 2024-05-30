@@ -5,4 +5,6 @@ categories:
 - samsung
 images:
 - url: /assets/images/devices/gta2swifi.png
-kernel: https://github.com/lifehackerhansol-android/android_kernel_samsung_msm8937
+kernel:
+  url: https://github.com/lifehackerhansol-android/android_kernel_samsung_msm8937
+  version: 3.18
