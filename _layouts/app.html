@@ -30,11 +30,8 @@ layout: compress
 										{% endif %}
 										<div class="card-body" dir="ltr">
 											<div>
-												<h4 class="card-title text-center {% if page.manufacturer %}mb-0{% endif %}">{{ page.title }}</h4>
-												{% if page.manufacturer %}
-													<small class="d-block text-center mb-3">{{ page.manufacturer }}</small>
-												{% endif %}
-												<p class="card-text">{{ page.description }}</p>
+												<h4 class="card-title text-center mb-0">{{ page.title }}</h4>
+												<small class="d-block text-center mb-3">{{ page.manufacturer }} | {{ page.codename}}</small>
 											</div>
 										</div>
 									<div class="card-footer">
