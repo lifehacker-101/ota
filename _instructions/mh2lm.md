@@ -47,7 +47,7 @@ adb sideload copy-partitions-20220613-signed.zip
 adb sideload <path to LineageOS ROM zip>
 ```
 1. When prompted, select `Yes` to reboot back to recovery
-1. If you wish to install Google apps, follow this guide: https://wiki.lineageos.org/gapps/
+1. If you wish to install Google apps, follow this guide: <https://wiki.lineageos.org/gapps/>
 1. Reboot your phone
 
 You are now booted into LineageOS.
