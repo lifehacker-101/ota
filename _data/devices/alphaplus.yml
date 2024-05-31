@@ -1,6 +1,10 @@
 title: G8 ThinQ (G820N)
 codename: alphaplus
 manufacturer: LG
+maintainer:
+  - iGOR121
+  - jmpfbmx
+  - lifehackerhansol
 categories:
 - lge
 images:

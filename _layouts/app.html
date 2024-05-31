@@ -31,12 +31,23 @@ layout: compress
 										<div class="card-body" dir="ltr">
 											<div>
 												<h4 class="card-title text-center mb-0">{{ page.title }}</h4>
-												<small class="d-block text-center mb-3">{{ page.manufacturer }} | {{ page.codename}}</small>
+												<small class="d-block text-center mb-3">{{ page.manufacturer }} | {{ page.codename }}</small>
 											</div>
 										</div>
 									<div class="card-footer">
 										<small>
 											<dl>
+												{% if page.maintainer.size > 0 %}
+												<div>
+													<dt class="innerHTML-maintainers">Maintainer:</dt>
+													<p>
+														{%- for maintainer in page.maintainer -%}
+														{{ maintainer }}
+														{% if forloop.last == false %}<br>{% endif %}
+														{% endfor %}
+													</p>
+												</div>
+												{% endif %}
 												{% if page.categories.size > 0 %}
 												<div>
 													<dt class="innerHTML-categories">Categories:</dt>

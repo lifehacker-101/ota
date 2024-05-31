@@ -1,6 +1,10 @@
 title: G8s ThinQ
 codename: betalm
 manufacturer: LG
+maintainer:
+  - iGOR121
+  - jmpfbmx
+  - lifehackerhansol
 categories:
 - lge
 images:

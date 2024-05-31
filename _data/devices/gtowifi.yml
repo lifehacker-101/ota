@@ -1,6 +1,8 @@
 title: Galaxy Tab A 8.0 (2019)
 codename: gtowifi
 manufacturer: Samsung
+maintainer:
+  - lifehackerhansol
 categories:
 - samsung
 images:

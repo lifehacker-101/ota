@@ -1,6 +1,10 @@
 title: G8X ThinQ / V50S ThinQ
 codename: mh2lm
 manufacturer: LG
+maintainer:
+  - iGOR121
+  - jmpfbmx
+  - lifehackerhansol
 categories:
 - lge
 images:
