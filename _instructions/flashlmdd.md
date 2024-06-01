@@ -1,1 +1,1 @@
-{% include instructions-common/flashlm.md recoveryimage="https://sourceforge.net/projects/lifehackerhansol-android/files/recovery/flashlmdd/lineage-recovery-21.0-20240531-UNOFFICIAL-flashlmdd-signed.img" %}
+{% include instructions-common/lge-sm8150.md recoveryimage="https://sourceforge.net/projects/lifehackerhansol-android/files/recovery/flashlmdd/lineage-recovery-21.0-20240531-UNOFFICIAL-flashlmdd-signed.img" %}
