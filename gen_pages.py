@@ -51,6 +51,11 @@ def gen_page(device: str):
 
     # Rewrite page front matter
     # That's the only thing on this file anyway
+    try:
+        os.mkdir("_device")
+    except FileExistsError:
+        pass
+
     with open(f'_device/{device}.md', 'w') as devicePage:
         devicePage.write('---\n')
         yaml.dump(deviceData, devicePage, sort_keys=False)
