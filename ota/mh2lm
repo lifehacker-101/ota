@@ -8,6 +8,15 @@
             "size": 1177844457,
             "url": "https://sourceforge.net/projects/lifehackerhansol-android/files/lineage/release//mh2lm/lineage-21.0-20240528-UNOFFICIAL-mh2lm-signed.zip",
             "version": "21.0"
+        },
+        {
+            "datetime": "1717756774",
+            "filename": "lineage-21.0-20240607-UNOFFICIAL-mh2lm-signed.zip",
+            "id": "6bcae49338aa3df8c97ca7472edbd7acb3b9dac8a5249e929587e216aa19b6c0",
+            "romtype": "unofficial",
+            "size": 1177795300,
+            "url": "https://sourceforge.net/projects/lifehackerhansol-android/files/lineage/release//mh2lm/lineage-21.0-20240607-UNOFFICIAL-mh2lm-signed.zip",
+            "version": "21.0"
         }
     ]
 }
