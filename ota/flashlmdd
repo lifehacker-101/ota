@@ -17,6 +17,15 @@
             "size": 1158323718,
             "url": "https://sourceforge.net/projects/lifehackerhansol-android/files/lineage/release//flashlmdd/lineage-21.0-20240609-UNOFFICIAL-flashlmdd-signed.zip",
             "version": "21.0"
+        },
+        {
+            "datetime": "1718621415",
+            "filename": "lineage-21.0-20240617-UNOFFICIAL-flashlmdd-signed.zip",
+            "id": "762b10c0af756a5af803ef369e4ac852d75a31576621c5d02a0c6805722239f0",
+            "romtype": "unofficial",
+            "size": 1158654084,
+            "url": "https://sourceforge.net/projects/lifehackerhansol-android/files/lineage/release//flashlmdd/lineage-21.0-20240617-UNOFFICIAL-flashlmdd-signed.zip",
+            "version": "21.0"
         }
     ]
 }
