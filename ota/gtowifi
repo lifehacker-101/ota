@@ -17,6 +17,15 @@
             "size": 974463218,
             "url": "https://sourceforge.net/projects/lifehackerhansol-android/files/lineage/release//gtowifi/lineage-21.0-20240608-UNOFFICIAL-gtowifi-signed.zip",
             "version": "21.0"
+        },
+        {
+            "datetime": "1718695270",
+            "filename": "lineage-21.0-20240618-UNOFFICIAL-gtowifi-signed.zip",
+            "id": "1710cdeaf9056adb83f71d47b0188043cbc9b05acc374fdbec67b05afcc523b1",
+            "romtype": "unofficial",
+            "size": 974558095,
+            "url": "https://sourceforge.net/projects/lifehackerhansol-android/files/lineage/release//gtowifi/lineage-21.0-20240618-UNOFFICIAL-gtowifi-signed.zip",
+            "version": "21.0"
         }
     ]
 }
