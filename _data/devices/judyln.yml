@@ -1,0 +1,13 @@
+title: G7 ThinQ
+codename: judyln
+manufacturer: LG
+maintainer:
+  - lifehackerhansol
+  - log1cs
+categories:
+- lge
+images:
+- url: /assets/images/devices/judyln.png
+kernel:
+  url: https://github.com/lge-sdm845/android_kernel_lge_sdm845
+  version: 4.9
