@@ -48,7 +48,8 @@ def gen_json(FILE_BASE: str, URL_BASE: str):
             'version': version,
             'romtype': buildtype.lower()
         })
-    builds["response"] = sorted(builds["response"], key=lambda x: x['datetime'])
+    if builds:
+        builds["response"] = sorted(builds["response"], key=lambda x: x['datetime'])
     return builds
 
 
@@ -62,5 +63,6 @@ if __name__ == "__main__":
 
     for device in os.listdir(FILE_BASE):
         otaData = gen_json(f"{FILE_BASE}/{device}", f"{URL_BASE}/{device}" if URL_BASE else '')
-        with open(f"ota/{device}", 'w') as otafile:
-            json.dump(otaData, otafile, sort_keys=True, indent=4)
+        if otaData:
+            with open(f"ota/{device}", 'w') as otafile:
+                json.dump(otaData, otafile, sort_keys=True, indent=4)
