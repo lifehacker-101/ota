@@ -8,15 +8,6 @@
             "size": 1191596353,
             "url": "https://sourceforge.net/projects/lifehackerhansol-android/files/lineage/release//betalm/lineage-21.0-20240530-UNOFFICIAL-betalm-signed.zip",
             "version": "21.0"
-        },
-        {
-            "datetime": "1719817309",
-            "filename": "lineage-21.0-20240701-UNOFFICIAL-betalm-signed.zip",
-            "id": "821f0c0625d1f71e2c8a57baa623c140356359ea060e2e9ff1dced2f232b21c3",
-            "romtype": "unofficial",
-            "size": 1202788912,
-            "url": "https://sourceforge.net/projects/lifehackerhansol-android/files/lineage/release//betalm/lineage-21.0-20240701-UNOFFICIAL-betalm-signed.zip",
-            "version": "21.0"
         }
     ]
 }
