@@ -8,6 +8,15 @@
             "size": 1190514526,
             "url": "https://sourceforge.net/projects/lifehackerhansol-android/files/lineage/release//alphaplus/lineage-21.0-20240530-UNOFFICIAL-alphaplus-signed.zip",
             "version": "21.0"
+        },
+        {
+            "datetime": "1722606808",
+            "filename": "lineage-21.0-20240802-UNOFFICIAL-alphaplus-signed.zip",
+            "id": "6a03da23bfa509ab20e829c0dc3a892dcb4f5f763ffaa423243db426f49752a6",
+            "romtype": "unofficial",
+            "size": 1202457858,
+            "url": "https://sourceforge.net/projects/lifehackerhansol-android/files/lineage/release//alphaplus/lineage-21.0-20240802-UNOFFICIAL-alphaplus-signed.zip",
+            "version": "21.0"
         }
     ]
 }
