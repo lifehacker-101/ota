@@ -6,7 +6,7 @@
             "id": "c2d3c16d5df5b571d770b15f13d62ddd70146392d701bbbacc058c6fa107297c",
             "romtype": "unofficial",
             "size": 1177844457,
-            "url": "https://sourceforge.net/projects/lifehackerhansol-android/files/lineage/release//mh2lm/lineage-21.0-20240528-UNOFFICIAL-mh2lm-signed.zip",
+            "url": "https://mirrors.lifehacker101.net/lifehacker101/lineage/release//mh2lm/lineage-21.0-20240528-UNOFFICIAL-mh2lm-signed.zip",
             "version": "21.0"
         },
         {
@@ -15,7 +15,7 @@
             "id": "6bcae49338aa3df8c97ca7472edbd7acb3b9dac8a5249e929587e216aa19b6c0",
             "romtype": "unofficial",
             "size": 1177795300,
-            "url": "https://sourceforge.net/projects/lifehackerhansol-android/files/lineage/release//mh2lm/lineage-21.0-20240607-UNOFFICIAL-mh2lm-signed.zip",
+            "url": "https://mirrors.lifehacker101.net/lifehacker101/lineage/release//mh2lm/lineage-21.0-20240607-UNOFFICIAL-mh2lm-signed.zip",
             "version": "21.0"
         },
         {
@@ -24,7 +24,7 @@
             "id": "d8e9d0b464baf92e5503f9e2146bb2a11b069979c8a3a7ef5844ce8984d659d3",
             "romtype": "unofficial",
             "size": 1182726472,
-            "url": "https://sourceforge.net/projects/lifehackerhansol-android/files/lineage/release//mh2lm/lineage-21.0-20240620-UNOFFICIAL-mh2lm-signed.zip",
+            "url": "https://mirrors.lifehacker101.net/lifehacker101/lineage/release//mh2lm/lineage-21.0-20240620-UNOFFICIAL-mh2lm-signed.zip",
             "version": "21.0"
         },
         {
@@ -33,7 +33,7 @@
             "id": "639485645f3418e9df8d0f4cfe5c4a8b1cddc96f0f682e917e449d4c04a52a31",
             "romtype": "unofficial",
             "size": 1189248182,
-            "url": "https://sourceforge.net/projects/lifehackerhansol-android/files/lineage/release//mh2lm/lineage-21.0-20240804-UNOFFICIAL-mh2lm-signed.zip",
+            "url": "https://mirrors.lifehacker101.net/lifehacker101/lineage/release//mh2lm/lineage-21.0-20240804-UNOFFICIAL-mh2lm-signed.zip",
             "version": "21.0"
         }
     ]
