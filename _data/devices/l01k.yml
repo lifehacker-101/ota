@@ -1,0 +1,13 @@
+title: V30 (Japan)
+codename: l01k
+manufacturer: LG
+maintainer:
+  - lifehackerhansol
+  - SGCMarkus
+categories:
+- lge
+images:
+- url: /assets/images/devices/joan.png
+kernel:
+  url: https://github.com/LineageOS/android_kernel_lge_msm8998
+  version: 4.4
