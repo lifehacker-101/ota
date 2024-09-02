@@ -26,6 +26,15 @@
             "size": 1196037415,
             "url": "https://mirrors.lifehacker101.net/lifehacker101/lineage/release//alphaplus/lineage-21.0-20240819-UNOFFICIAL-alphaplus-signed.zip",
             "version": "21.0"
+        },
+        {
+            "datetime": "1725174457",
+            "filename": "lineage-21.0-20240901-UNOFFICIAL-alphaplus-signed.zip",
+            "id": "b45482a3bb3f74297db4a7f48bf4d8a0fbc5a8641b1370eba8d80c75f956b6bc",
+            "romtype": "unofficial",
+            "size": 1194742629,
+            "url": "https://mirrors.lifehacker101.net/lifehacker101/lineage/release//alphaplus/lineage-21.0-20240901-UNOFFICIAL-alphaplus-signed.zip",
+            "version": "21.0"
         }
     ]
 }
