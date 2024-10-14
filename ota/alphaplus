@@ -1,15 +1,6 @@
 {
     "response": [
         {
-            "datetime": "1724070961",
-            "filename": "lineage-21.0-20240819-UNOFFICIAL-alphaplus-signed.zip",
-            "id": "ba1481d2439abdcdd67c997e8d209e6de28147b4c21bca34e5d62ca3281baaaa",
-            "romtype": "unofficial",
-            "size": 1196037415,
-            "url": "https://mirrors.lifehacker101.net/lifehacker101/lineage/release//alphaplus/lineage-21.0-20240819-UNOFFICIAL-alphaplus-signed.zip",
-            "version": "21.0"
-        },
-        {
             "datetime": "1725174457",
             "filename": "lineage-21.0-20240901-UNOFFICIAL-alphaplus-signed.zip",
             "id": "b45482a3bb3f74297db4a7f48bf4d8a0fbc5a8641b1370eba8d80c75f956b6bc",
@@ -34,6 +25,15 @@
             "romtype": "unofficial",
             "size": 1195506883,
             "url": "https://mirrors.lifehacker101.net/lifehacker101/lineage/release//alphaplus/lineage-21.0-20241001-UNOFFICIAL-alphaplus-signed.zip",
+            "version": "21.0"
+        },
+        {
+            "datetime": "1728889551",
+            "filename": "lineage-21.0-20241014-UNOFFICIAL-alphaplus-signed.zip",
+            "id": "f017d06cbb1440d609850efe10bcd72e8c729992198e27fccf52093adbb280c2",
+            "romtype": "unofficial",
+            "size": 1195625275,
+            "url": "https://mirrors.lifehacker101.net/lifehacker101/lineage/release//alphaplus/lineage-21.0-20241014-UNOFFICIAL-alphaplus-signed.zip",
             "version": "21.0"
         }
     ]
