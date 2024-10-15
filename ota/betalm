@@ -1,15 +1,6 @@
 {
     "response": [
         {
-            "datetime": "1724072149",
-            "filename": "lineage-21.0-20240819-UNOFFICIAL-betalm-signed.zip",
-            "id": "15f4d151d09e93525843f3150119476aab01f59a849c45c7c44175e44f1fa16c",
-            "romtype": "unofficial",
-            "size": 1194345515,
-            "url": "https://mirrors.lifehacker101.net/lifehacker101/lineage/release//betalm/lineage-21.0-20240819-UNOFFICIAL-betalm-signed.zip",
-            "version": "21.0"
-        },
-        {
             "datetime": "1725260732",
             "filename": "lineage-21.0-20240902-UNOFFICIAL-betalm-signed.zip",
             "id": "aa7a114163e38365654acc86a4fb3b8c8547c34b89a52a1605283964e0e73d62",
@@ -34,6 +25,15 @@
             "romtype": "unofficial",
             "size": 1195121994,
             "url": "https://mirrors.lifehacker101.net/lifehacker101/lineage/release//betalm/lineage-21.0-20241002-UNOFFICIAL-betalm-signed.zip",
+            "version": "21.0"
+        },
+        {
+            "datetime": "1728975959",
+            "filename": "lineage-21.0-20241015-UNOFFICIAL-betalm-signed.zip",
+            "id": "ddded942f0430284ad3a8dcfeadb577062efba7f15b4144fa73bf15eed4e3f1d",
+            "romtype": "unofficial",
+            "size": 1195125699,
+            "url": "https://mirrors.lifehacker101.net/lifehacker101/lineage/release//betalm/lineage-21.0-20241015-UNOFFICIAL-betalm-signed.zip",
             "version": "21.0"
         }
     ]
