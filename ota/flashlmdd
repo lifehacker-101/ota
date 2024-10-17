@@ -1,15 +1,6 @@
 {
     "response": [
         {
-            "datetime": "1724074662",
-            "filename": "lineage-21.0-20240819-UNOFFICIAL-flashlmdd-signed.zip",
-            "id": "8271b88564e070d5084d589773f6ea93e63a6c5c89e845f8acc471322377041e",
-            "romtype": "unofficial",
-            "size": 1165383970,
-            "url": "https://mirrors.lifehacker101.net/lifehacker101/lineage/release//flashlmdd/lineage-21.0-20240819-UNOFFICIAL-flashlmdd-signed.zip",
-            "version": "21.0"
-        },
-        {
             "datetime": "1725434835",
             "filename": "lineage-21.0-20240904-UNOFFICIAL-flashlmdd-signed.zip",
             "id": "c6e4a0832ad0974223f14a8046c1250c0ac952cb8500e04558b08694c5cdae09",
@@ -34,6 +25,15 @@
             "romtype": "unofficial",
             "size": 1164911387,
             "url": "https://mirrors.lifehacker101.net/lifehacker101/lineage/release//flashlmdd/lineage-21.0-20241004-UNOFFICIAL-flashlmdd-signed.zip",
+            "version": "21.0"
+        },
+        {
+            "datetime": "1729148758",
+            "filename": "lineage-21.0-20241017-UNOFFICIAL-flashlmdd-signed.zip",
+            "id": "91acb77ecb40f74823d0b2349a7fef43ef406b598398765809135702b349fdb1",
+            "romtype": "unofficial",
+            "size": 1164833030,
+            "url": "https://mirrors.lifehacker101.net/lifehacker101/lineage/release//flashlmdd/lineage-21.0-20241017-UNOFFICIAL-flashlmdd-signed.zip",
             "version": "21.0"
         }
     ]
