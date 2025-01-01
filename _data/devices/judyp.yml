@@ -1,5 +1,5 @@
-title: G7 ThinQ (G710AWM/EAW/EM/EMW)
-codename: judyln
+title: V35 ThinQ (V350AWM/N)
+codename: judyp
 manufacturer: LG
 maintainer:
   - lifehackerhansol
@@ -8,7 +8,7 @@ maintainer:
 categories:
 - lge
 images:
-- url: /assets/images/devices/judyln.png
+- url: /assets/images/devices/judyp.png
 kernel:
   url: https://github.com/lge-sdm845/android_kernel_lge_sdm845
   version: 4.9
