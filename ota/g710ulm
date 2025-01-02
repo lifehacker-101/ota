@@ -1,0 +1,13 @@
+{
+    "response": [
+        {
+            "datetime": "1735782829",
+            "filename": "lineage-22.1-20250102-UNOFFICIAL-g710ulm-signed.zip",
+            "id": "3c499b10c8d7aff9d5310877183bd2258bdce18a154fed18fb70357034ce2d93",
+            "romtype": "unofficial",
+            "size": 952085389,
+            "url": "https://mirrors.lifehacker101.net/lifehacker101/lineage/release//g710ulm/lineage-22.1-20250102-UNOFFICIAL-g710ulm-signed.zip",
+            "version": "22.1"
+        }
+    ]
+}
