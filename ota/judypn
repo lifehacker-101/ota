@@ -1,0 +1,13 @@
+{
+    "response": [
+        {
+            "datetime": "1735784328",
+            "filename": "lineage-22.1-20250102-UNOFFICIAL-judypn-signed.zip",
+            "id": "5252da0e7a5bfb64bbd2d92cbf2300d6f94d936140ca50cbb5aef10c45479c7c",
+            "romtype": "unofficial",
+            "size": 996937332,
+            "url": "https://mirrors.lifehacker101.net/lifehacker101/lineage/release//judypn/lineage-22.1-20250102-UNOFFICIAL-judypn-signed.zip",
+            "version": "22.1"
+        }
+    ]
+}
