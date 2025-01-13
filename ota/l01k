@@ -26,15 +26,6 @@
             "size": 1014701832,
             "url": "https://mirrors.lifehacker101.net/lifehacker101/lineage/release//l01k/lineage-21.0-20250105-UNOFFICIAL-l01k-signed.zip",
             "version": "21.0"
-        },
-        {
-            "datetime": "1736764144",
-            "filename": "lineage-22.1-20250113-UNOFFICIAL-l01k-signed.zip",
-            "id": "9939901a7affbf13d96719fca9aff9a5d9e847942e3117742e8a99b7d9f15318",
-            "romtype": "unofficial",
-            "size": 1002216863,
-            "url": "https://mirrors.lifehacker101.net/lifehacker101/lineage/release//l01k/lineage-22.1-20250113-UNOFFICIAL-l01k-signed.zip",
-            "version": "22.1"
         }
     ]
 }
