@@ -1,15 +1,6 @@
 {
     "response": [
         {
-            "datetime": "1731917045",
-            "filename": "lineage-21.0-20241118-UNOFFICIAL-l01k-signed.zip",
-            "id": "8641f71f6b7b3a0d76ec3a292b437e31ff620a9db7485d3132f2e3d9cefbf4d0",
-            "romtype": "unofficial",
-            "size": 1015737584,
-            "url": "https://mirrors.lifehacker101.net/lifehacker101/lineage/release//l01k/lineage-21.0-20241118-UNOFFICIAL-l01k-signed.zip",
-            "version": "21.0"
-        },
-        {
             "datetime": "1733385757",
             "filename": "lineage-21.0-20241205-UNOFFICIAL-l01k-signed.zip",
             "id": "03a21a5bdbf9a26b7384106b67139316dbe9891001bc3b67b4c1582133cacf15",
@@ -35,6 +26,15 @@
             "size": 1014701832,
             "url": "https://mirrors.lifehacker101.net/lifehacker101/lineage/release//l01k/lineage-21.0-20250105-UNOFFICIAL-l01k-signed.zip",
             "version": "21.0"
+        },
+        {
+            "datetime": "1736764144",
+            "filename": "lineage-22.1-20250113-UNOFFICIAL-l01k-signed.zip",
+            "id": "9939901a7affbf13d96719fca9aff9a5d9e847942e3117742e8a99b7d9f15318",
+            "romtype": "unofficial",
+            "size": 1002216863,
+            "url": "https://mirrors.lifehacker101.net/lifehacker101/lineage/release//l01k/lineage-22.1-20250113-UNOFFICIAL-l01k-signed.zip",
+            "version": "22.1"
         }
     ]
 }
