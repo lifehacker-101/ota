@@ -1,12 +1,12 @@
 {
     "response": [
         {
-            "datetime": "1736757600",
-            "filename": "lineage-22.1-20250113-UNOFFICIAL-joan-signed.zip",
-            "id": "be313e7e421429ed592a174b688e8ae576d82dce1af11b9633011aee08001371",
+            "datetime": "1736864777",
+            "filename": "lineage-22.1-20250114-UNOFFICIAL-joan-signed.zip",
+            "id": "91ca5324e0bdcbcffd09a26856eb146d0c664c6108c818eb701a8e041ab7d5cb",
             "romtype": "unofficial",
-            "size": 1002274898,
-            "url": "https://mirrors.lifehacker101.net/lifehacker101/lineage/release//joan/lineage-22.1-20250113-UNOFFICIAL-joan-signed.zip",
+            "size": 1002344491,
+            "url": "https://mirrors.lifehacker101.net/lifehacker101/lineage/release//joan/lineage-22.1-20250114-UNOFFICIAL-joan-signed.zip",
             "version": "22.1"
         }
     ]
