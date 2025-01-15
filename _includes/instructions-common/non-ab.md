@@ -3,7 +3,7 @@ If you are currently running any ROM not hosted on this site, you must clean fla
 
 {% if page.format_on_upgrade == true %}
 
-If you are currently running LineageOS 21 and upgrading to 22.1, you must clean flash as encryption methods have changed.
+If you are currently running LineageOS 21 and upgrading to 22.1, you must format your data as encryption methods have changed.
 {:.alert .alert-danger}
 
 {% endif %}
