@@ -1,6 +1,13 @@
 If you are currently running any ROM not hosted on this site, you must clean flash!
 {:.alert .alert-danger}
 
+{% if page.format_on_upgrade == true %}
+
+If you are currently running LineageOS 21 and upgrading to 22.1, you must clean flash as encryption methods have changed.
+{:.alert .alert-danger}
+
+{% endif %}
+
 You must be rooted to complete installation.
 {:.alert .alert-warning}
 

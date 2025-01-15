@@ -11,3 +11,4 @@ images:
 kernel:
   url: https://github.com/LineageOS/android_kernel_lge_msm8998
   version: 4.4
+format_on_upgrade: true
