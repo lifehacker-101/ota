@@ -1,15 +1,6 @@
 {
     "response": [
         {
-            "datetime": "1736864777",
-            "filename": "lineage-22.1-20250114-UNOFFICIAL-joan-signed.zip",
-            "id": "91ca5324e0bdcbcffd09a26856eb146d0c664c6108c818eb701a8e041ab7d5cb",
-            "romtype": "unofficial",
-            "size": 1002344491,
-            "url": "https://mirrors.lifehacker101.net/lifehacker101/lineage/release//joan/lineage-22.1-20250114-UNOFFICIAL-joan-signed.zip",
-            "version": "22.1"
-        },
-        {
             "datetime": "1738483372",
             "filename": "lineage-22.1-20250202-UNOFFICIAL-joan-signed.zip",
             "id": "7f97beb72c218a8d5016dbf568fe46f016ce281b9df18fe3213114599cad6e9c",

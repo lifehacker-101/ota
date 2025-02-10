@@ -1,33 +1,6 @@
 {
     "response": [
         {
-            "datetime": "1734595548",
-            "filename": "lineage-21.0-20241219-UNOFFICIAL-mh2lm-signed.zip",
-            "id": "03c882cf70f411cebaea90c1e6cf449eeaed8b762083e2bc28e335916dc4d243",
-            "romtype": "unofficial",
-            "size": 1184187693,
-            "url": "https://mirrors.lifehacker101.net/lifehacker101/lineage/release//mh2lm/lineage-21.0-20241219-UNOFFICIAL-mh2lm-signed.zip",
-            "version": "21.0"
-        },
-        {
-            "datetime": "1736151220",
-            "filename": "lineage-21.0-20250106-UNOFFICIAL-mh2lm-signed.zip",
-            "id": "52900d29a32b8aebf86637227516e941330f44e4fc8df3324b3c2f1b3ae3989a",
-            "romtype": "unofficial",
-            "size": 1183341255,
-            "url": "https://mirrors.lifehacker101.net/lifehacker101/lineage/release//mh2lm/lineage-21.0-20250106-UNOFFICIAL-mh2lm-signed.zip",
-            "version": "21.0"
-        },
-        {
-            "datetime": "1737187439",
-            "filename": "lineage-21.0-20250118-UNOFFICIAL-mh2lm-signed.zip",
-            "id": "2cd234b3546284704bd6caac98544d06c2db4b7f9543efdd665fdfd6c5dfc1c2",
-            "romtype": "unofficial",
-            "size": 1183368391,
-            "url": "https://mirrors.lifehacker101.net/lifehacker101/lineage/release//mh2lm/lineage-21.0-20250118-UNOFFICIAL-mh2lm-signed.zip",
-            "version": "21.0"
-        },
-        {
             "datetime": "1737644102",
             "filename": "lineage-21.0-20250123-UNOFFICIAL-mh2lm-signed.zip",
             "id": "969c400e0c7e3f4e76f610ca41beb580e1bdbcafe7c8917a3abe786c6ea6e8dd",
