@@ -52,7 +52,7 @@ def gen_page(device: str):
     # Rewrite page front matter
     # That's the only thing on this file anyway
     try:
-        os.mkdir("_device")
+        os.mkdir("_lineage")
     except FileExistsError:
         pass
 

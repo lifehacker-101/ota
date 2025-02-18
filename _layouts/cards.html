@@ -37,8 +37,10 @@ layout: compress
 						
 						{% if page.system == "lineage" %}
 							{% assign cards = site.lineage %}
+						{% elsif page.system == "pixelos" %}
+							{% assign cards = site.pixelos %}
 						{% elsif page.title == "Home" %}
-							{% assign temp = site.lineage %}
+							{% assign temp = site.lineage | concat: site.pixelos %}
 							{% for item in temp %}
 								{% assign id = item.manufacturer | append: item.title %}
 								{% unless existing contains id %}

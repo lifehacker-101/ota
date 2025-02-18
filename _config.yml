@@ -24,3 +24,5 @@ defaults:
 collections:
   lineage:
     output: true
+  pixelos:
+    output: true
