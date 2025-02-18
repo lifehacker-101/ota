@@ -62,7 +62,7 @@ def gen_page(device: str):
         devicePage.write('---')
         devicePage.write('\n\n')
         try:
-            with open(f'_instructions/{device}.md', 'r') as deviceInstructions:
+            with open(f'_instructions/lineage/{device}.md', 'r') as deviceInstructions:
                 devicePage.write('## Installation Instrutions\n\n')
                 devicePage.write(deviceInstructions.read())
         except FileNotFoundError:
