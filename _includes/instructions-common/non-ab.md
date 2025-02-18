@@ -1,9 +1,9 @@
-If you are currently running any ROM not hosted on this site, you must clean flash!
+Dirty flashing between different ROMs, or migrating from another website's builds are not supported.
 {:.alert .alert-danger}
 
 {% if page.format_on_upgrade == true %}
 
-If you are currently running LineageOS 21 and upgrading to 22.1, you must format your data as encryption methods have changed.
+If you are currently upgrading Android versions, you must format your data as encryption methods have changed.
 {:.alert .alert-danger}
 
 {% endif %}
@@ -18,7 +18,7 @@ You must be rooted to complete installation.
 
 #### Section II - Installing a custom recovery
 
-1. Download [Lineage Recovery]({{ include.recoveryimage }})
+1. Download [this custom recovery]({{ include.recoveryimage }})
 1. Install it using ADB:
 ```
 adb push <name of downloaded file> /sdcard/recovery.img
@@ -32,7 +32,7 @@ exit
 adb reboot recovery
 ```
 
-### Section III - Installing LineageOS
+### Section III - Installing the ROM
 
 1. Navigate to `Factory Reset`
 1. Select `Format data/factory reset`
@@ -42,11 +42,13 @@ adb reboot recovery
 1. Select `Apply from ADB`
 1. On your PC, run the following command:
 ```
-adb sideload <path to LineageOS ROM zip>
+adb sideload <path to ROM zip>
 ```
 1. When prompted, select `Yes` to reboot back to recovery
+{%- unless page.has_gapps == true %}
 1. If you wish to install Google apps, follow this guide: <https://wiki.lineageos.org/gapps/>
+{%- endunless %}
 1. Reboot your phone
 
-You are now booted into LineageOS.
+You have completed installation.
 {:.alert .alert-success}

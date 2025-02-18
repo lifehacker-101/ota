@@ -22,7 +22,7 @@ def byteCount(bytes: int) -> str:
 
 def gen_page(device: str):
     deviceData = {}
-    with open(f"_data/devices/{device}.yml", 'r') as deviceYaml:
+    with open(f"_data/devices/lineage/{device}.yml", 'r') as deviceYaml:
         deviceData = yaml.safe_load(deviceYaml)
 
     buildData = {}
@@ -56,7 +56,7 @@ def gen_page(device: str):
     except FileExistsError:
         pass
 
-    with open(f'_device/{device}.md', 'w') as devicePage:
+    with open(f'_lineage/{device}.md', 'w') as devicePage:
         devicePage.write('---\n')
         yaml.dump(deviceData, devicePage, sort_keys=False)
         devicePage.write('---')
@@ -70,7 +70,7 @@ def gen_page(device: str):
 
 
 if __name__ == "__main__":
-    for i in os.listdir('_data/devices/'):
+    for i in os.listdir('_data/devices/lineage'):
         device = i.replace('.yml', '')
         print(f"Generating {device} page...")
         gen_page(device)

@@ -1,5 +1,5 @@
 ---
 layout: cards
 title: Devices
-system: device
+system: lineage
 ---

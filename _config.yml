@@ -12,8 +12,7 @@ include:
 exclude:
   - Gemfile*
   - vendor
-  - gen_mirror_json.py
-  - gen_pages.py
+  - scripts
   - LICENSE*
 
 defaults:
@@ -23,5 +22,5 @@ defaults:
       layout: app
 
 collections:
-  device:
+  lineage:
     output: true

@@ -35,10 +35,10 @@ layout: compress
 							</div>
 						{% endif %}
 						
-						{% if page.system == "device" %}
-							{% assign cards = site.device %}
+						{% if page.system == "lineage" %}
+							{% assign cards = site.lineage %}
 						{% elsif page.title == "Home" %}
-							{% assign temp = site.device %}
+							{% assign temp = site.lineage %}
 							{% for item in temp %}
 								{% assign id = item.manufacturer | append: item.title %}
 								{% unless existing contains id %}
